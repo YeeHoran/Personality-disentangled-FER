@@ -1,3 +1,4 @@
 # Personality-disentangled-FER
 This is a personality-disentangled FER(Facial Expression Recognition) project launched together by Yi Huo and Amir Shirian.
-The first code is to process dataset(https://chalearnlap.cvc.uab.cat/dataset/24/description/#). It extracts multiple image frames for each video.
+The first code 'extractFras-20230202.py' is to process dataset(https://chalearnlap.cvc.uab.cat/dataset/24/description/#). It extracts multiple image frames for each identity video.
+The second code 'geneFacepairCSV-face pair generation & save pairs to csv file-20230205.py' is to generate face image pair combinations for evaluating the the performance of various models on face verification. One point to emphasis is that its delete repetitive identity that distributed in different higher level dirs than the first code used 1-order dirs. This is, the first code delete repetitive identity videos, while this second code delete repetitive  extracted identity framesfolders further.
